@@ -2,14 +2,18 @@
 #include<stdlib.h>
 
 int i, j;
-
+int ii, jj;
 int main(void)
 {
-	for (i = 0; i < 3; i++)
+	printf("Enter iength:");
+	scanf_s("%d", &ii);
+	printf("Enter breadth:");
+	scanf_s("%d", &jj);
+	for (i = 0; i < ii; i++)
 	{
-		for (j = 0; j < 12; j++)
+		for (j = 0; j < jj; j++)
 		{
-			if (i == 0 || i == 2 || j == 0 || j == 11)
+			if (i == 0 || i == (ii-1) || j == 0 || j == (jj-1))
 				printf("+");
 			else
 				printf(" ");
